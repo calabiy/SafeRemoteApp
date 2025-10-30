@@ -104,10 +104,10 @@ public:
         L = luaL_newstate();
         luaL_openlibs(L);
         
-        // Генерация уникального ID устройства
+        
         device_id = generate_device_id();
         
-        // Инициализация криптографии
+        
         initialize_crypto();
         
         // Регистрация C++ функций в Lua
@@ -140,7 +140,7 @@ public:
         return id;
     }
     
-    // Инициализация криптографии
+    
     void initialize_crypto() {
         // Генерация RSA ключей
         rsa_key_pair = RSA_new();
